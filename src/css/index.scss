@@ -1,0 +1,23 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import "./variables.scss";
+
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    font-family: $base-font, monospace;
+    //background: #F6F8FF;
+   
+}
+
+@media (prefers-color-scheme: dark) {
+    body, html, #root {
+        //background: #1E2A47;
+    }
+
+    .app-container {
+        //background: #1E2A47;
+    }
+}
+
+@import "./mobile.scss";
