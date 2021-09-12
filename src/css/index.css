@@ -3,7 +3,41 @@
 body, html, #root {
   margin: 0;
   padding: 0;
-  font-family: "Space Mono", monospace; }
+  font-family: "Space Mono", "monospace";
+  overflow-x: hidden; }
+  body *, html *, #root * {
+    font-family: "Space Mono", "monospace"; }
+
+@media (prefers-color-scheme: dark) {
+  body, html, #root {
+    background: #141D2F; }
+  .app-container .app-menu-brand h1 {
+    color: white !important; }
+  .app-container .app-menu-theme-selector p {
+    color: white; }
+  .app-container .app-search {
+    background: #1E2A47 !important; }
+    .app-container .app-search .app-search-text input {
+      background: #1E2A47 !important;
+      color: white !important; }
+    .app-container .app-search .app-search-text input::placeholder {
+      color: white !important; }
+    .app-container .app-search .app-search-text input:focus {
+      color: white !important; }
+  .app-container .app-profile-container {
+    background: #1E2A47 !important; }
+    .app-container .app-profile-container .app-profile-info-text h3 {
+      color: white; }
+    .app-container .app-profile-container .app-profile-info-text p {
+      color: white !important; }
+    .app-container .app-profile-container .app-profile-lorem-ipsum p {
+      color: white !important; }
+    .app-container .app-profile-container .app-profile-stats-wrapper {
+      background: #141D2F !important; }
+      .app-container .app-profile-container .app-profile-stats-wrapper * {
+        color: white !important; }
+  .app-container .app-profile-social-wrapper * {
+    color: white !important; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
   .app-container {
@@ -40,7 +74,8 @@ body, html, #root {
         font-weight: 700; }
         .app-container .app-menu-container .app-menu .app-menu-theme-selector p {
           height: 100%;
-          margin: 0em 1em 0em 0em; }
+          margin: 0em 1em 0em 0em;
+          font-weight: 700; }
         .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector img {
           width: 100%;
           height: auto; }
@@ -64,17 +99,14 @@ body, html, #root {
         .app-container .app-search-container .app-search .app-search-text input {
           width: 95%;
           border: none;
-          font-family: "Space Mono", "monospace";
           font-size: 13px;
           height: 100%;
           letter-spacing: -.5px; }
         .app-container .app-search-container .app-search .app-search-text input::placeholder {
-          color: #4B6A9B;
-          opacity: .7; }
+          color: rgba(75, 106, 155, 0.7); }
         .app-container .app-search-container .app-search .app-search-text input:focus {
           border: none;
           outline: none;
-          font-family: "Space Mono", "monospace";
           font-size: 13px;
           color: black; }
       .app-container .app-search-container .app-search .app-search-button {
@@ -86,7 +118,6 @@ body, html, #root {
           padding: 1em 1em;
           border: none;
           border-radius: 10px;
-          font-family: "Space Mono", "monospace";
           font-size: 14px;
           font-weight: 700; }
     .app-container .app-profile-container {
@@ -128,6 +159,8 @@ body, html, #root {
             font-weight: 700; }
         .app-container .app-profile-container .app-profile-stats-wrapper .app-profile-stat-mid {
           margin: 0em 2em; }
+      .app-container .app-profile-container .app-profile-social-tw {
+        opacity: .5; }
       .app-container .app-profile-container .app-profile-social-wrapper .app-profile-social {
         display: flex;
         flex-flow: row;

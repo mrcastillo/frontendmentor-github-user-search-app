@@ -67,7 +67,7 @@ function Profile() {
                 </div>
             </div>
 
-            <div className={"app-profile-social"}>
+            <div className={"app-profile-social app-profile-social-tw"}>
                 <div className={"app-profile-social-img"}>
                     <img src={twitter} />
                 </div>

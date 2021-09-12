@@ -1,11 +1,14 @@
+@import "./variables.scss";
+
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
-
+    
     .app-container {
-        margin: 1em 1em;
 
+        margin: 1em 1em;
+        
         h1 {
             font-size: 26px;
             font-weight: 700;
@@ -53,6 +56,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
                     p { 
                         height: 100%;
                         margin: 0em 1em 0em 0em;
+                        font-weight: 700;
                     }
                     
                     .app-menu-selector {
@@ -96,21 +100,18 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
                     input {
                         width: 95%;
                         border: none;
-                        font-family: $base-font, "monospace";
                         font-size: 13px;
                         height: 100%;
                         letter-spacing: -.5px;
                     }
 
                     input::placeholder {
-                        color: #4B6A9B;
-                        opacity: .7;
+                        color: rgba(75, 106, 155, .7);
                     }
 
                     input:focus {
                         border: none;
                         outline: none;
-                        font-family: $base-font, "monospace";
                         font-size: 13px;
                         color: black;
                     }
@@ -126,7 +127,6 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
                         padding: 1em 1em;
                         border: none;
                         border-radius: 10px;
-                        font-family: $base-font, "monospace";
                         font-size: 14px;
                         font-weight: 700;
                     }
@@ -206,9 +206,11 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
                 }
             }
 
+            .app-profile-social-tw {
+                opacity: .5;
+            }
             .app-profile-social-wrapper {
                 
-
                 .app-profile-social {
                     display: flex;
                     flex-flow: row;
@@ -223,7 +225,6 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px) {
 
                     .app-profile-social-text {
                         flex: 1;
-
                     }
                 }
             }
