@@ -1,93 +1,26 @@
 @import "./reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import "./variables.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
 
 body, html, #root {
     margin: 0;
     padding: 0;
     font-family: $base-font, "monospace";
-    //background: #F6F8FF;
-   overflow-x: hidden;
+    background: #F6F8FF;
+    overflow-x: hidden;
+    height: 100%;
 
     * {
         font-family: $base-font, "monospace";
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    body, html, #root {
-        background: $dark-background;
-    }
 
-    .app-container {
-        
-        .app-menu-brand {
-            h1 {
-                color: white!important;
-            }
-        }
-
-        .app-menu-theme-selector {
-            p {
-                color: white;
-            }
-        }
-
-        .app-search {
-            background: #1E2A47!important;
-
-            .app-search-text {
-                
-                input {
-                    background: #1E2A47!important;
-                    color :white!important;
-                }
-
-                input::placeholder { 
-                    color: white!important;
-                }
-
-                input:focus { 
-                    color: white!important;
-                }
-            }
-        }
-
-        .app-profile-container {
-            background: #1E2A47!important;
-
-            .app-profile-info-text {
-                h3 {
-                    color: white;
-                }
-                p {
-                    color: white!important;
-                }
-            }
-
-            .app-profile-lorem-ipsum {
-
-                p {
-                    color: white!important;
-                }
-            }
-
-            .app-profile-stats-wrapper {
-                background: #141D2F!important;
-                * {
-                    color: white!important;
-                }
-            }
-        }
-
-        .app-profile-social-wrapper {
-            
-            * {
-                color: white!important;
-            }
-        }
-    }
-}
+@import "./darktheme.scss";
 
 @import "./mobile.scss";
 

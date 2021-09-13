@@ -1,29 +1,37 @@
 import { useState } from "react";
 
 import moonIcon from "../images/icon-moon.svg";
+import sunIcon from "../images/icon-sun.svg";
 
 function Menu() {
-    const [theme, setTheme] = useState("DARK");
-    const themeSelector = document.querySelector(".app-menu-theme-selector");
-    const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+    const [theme, setTheme] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const html = document.querySelector("html");
 
-    const toggleDarkMode = (state) => {
-        document.documentElement.classList.toggle("dark-mode", state);
-    }
+    const themeButton = (e) => {
+        e.preventDefault();
+        
+        var currentClass = html.className;
 
-    useDark.addEventListener("change", (event) => {
-        toggleDarkMode(event.matches);
-    })
+        if(currentClass === "dark-theme") {
+            html.className = "light-theme"
+            setTheme(false)
+        } else {
+            html.className = "dark-theme"
+            setTheme(true)
+        }
+        return;
+    };
+
     return (
         <div className={"app-menu-container"}>
             <div className={"app-menu"}>
                 <div className={"app-menu-brand"}>
                     <h1>devfinder</h1>
                 </div>
-                <div onClick={""} className={"app-menu-theme-selector"}>
-                    <p>{theme}</p>
+                <div onClick={themeButton} className={"app-menu-theme-selector"}>
+                    <p>{theme ? "LIGHT": "DARK"}</p>
                     <div className={"app-menu-selector"}>
-                        <img src={moonIcon} />
+                        <img src={theme ? sunIcon : moonIcon} />
                     </div>
                 </div>
             </div>

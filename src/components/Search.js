@@ -1,7 +1,8 @@
+
 import glass from "../images/icon-search.svg";
 
 function Search() {
-  return (
+    return (
     <div className={"app-search-container"}>
         
         <div className={"app-search"}>
@@ -20,7 +21,7 @@ function Search() {
             </div>
         </div>
     </div>
-  );
+    );
 }
 
 export default Search;

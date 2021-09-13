@@ -4,40 +4,48 @@ body, html, #root {
   margin: 0;
   padding: 0;
   font-family: "Space Mono", "monospace";
-  overflow-x: hidden; }
+  background: #F6F8FF;
+  overflow-x: hidden;
+  height: 100%; }
   body *, html *, #root * {
     font-family: "Space Mono", "monospace"; }
 
-@media (prefers-color-scheme: dark) {
-  body, html, #root {
-    background: #141D2F; }
-  .app-container .app-menu-brand h1 {
+.dark-theme body, .dark-theme #root {
+  background: #141D2F !important; }
+
+.dark-theme .app-container .app-menu-brand h1 {
+  color: white !important; }
+
+.dark-theme .app-container .app-menu-theme-selector p {
+  color: white; }
+
+.dark-theme .app-container .app-search {
+  background: #1E2A47 !important;
+  box-shadow: none !important; }
+  .dark-theme .app-container .app-search .app-search-text input {
+    background: #1E2A47 !important;
     color: white !important; }
-  .app-container .app-menu-theme-selector p {
+  .dark-theme .app-container .app-search .app-search-text input::placeholder {
+    color: white !important; }
+  .dark-theme .app-container .app-search .app-search-text input:focus {
+    color: white !important; }
+
+.dark-theme .app-container .app-profile-container {
+  background: #1E2A47 !important;
+  box-shadow: none !important; }
+  .dark-theme .app-container .app-profile-container .app-profile-info-text h3 {
     color: white; }
-  .app-container .app-search {
-    background: #1E2A47 !important; }
-    .app-container .app-search .app-search-text input {
-      background: #1E2A47 !important;
+  .dark-theme .app-container .app-profile-container .app-profile-info-text p {
+    color: white !important; }
+  .dark-theme .app-container .app-profile-container .app-profile-lorem-ipsum p {
+    color: white !important; }
+  .dark-theme .app-container .app-profile-container .app-profile-stats-wrapper {
+    background: #141D2F !important; }
+    .dark-theme .app-container .app-profile-container .app-profile-stats-wrapper * {
       color: white !important; }
-    .app-container .app-search .app-search-text input::placeholder {
-      color: white !important; }
-    .app-container .app-search .app-search-text input:focus {
-      color: white !important; }
-  .app-container .app-profile-container {
-    background: #1E2A47 !important; }
-    .app-container .app-profile-container .app-profile-info-text h3 {
-      color: white; }
-    .app-container .app-profile-container .app-profile-info-text p {
-      color: white !important; }
-    .app-container .app-profile-container .app-profile-lorem-ipsum p {
-      color: white !important; }
-    .app-container .app-profile-container .app-profile-stats-wrapper {
-      background: #141D2F !important; }
-      .app-container .app-profile-container .app-profile-stats-wrapper * {
-        color: white !important; }
-  .app-container .app-profile-social-wrapper * {
-    color: white !important; } }
+
+.dark-theme .app-container .app-profile-social-wrapper * {
+  color: white !important; }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
   .app-container {
@@ -87,7 +95,7 @@ body, html, #root {
       background: white;
       height: 60px;
       border-radius: 15px;
-      box-shadow: 0px 5px 10px -8px #4B6A9B; }
+      box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
       .app-container .app-search-container .app-search .app-search-glass {
         padding-left: 1em; }
         .app-container .app-search-container .app-search .app-search-glass img {
@@ -124,7 +132,7 @@ body, html, #root {
       background: white;
       padding: 2em 1em;
       border-radius: 15px;
-      box-shadow: 5px 5px 15px -8px #4B6A9B; }
+      box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
       .app-container .app-profile-container .app-profile-info {
         display: flex;
         flex-flow: row; }

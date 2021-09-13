@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+.dark-theme {
+    body, #root {
+        background: $dark-background!important;
+    }
+
+    .app-container {
+        
+        .app-menu-brand {
+            h1 {
+                color: white!important;
+            }
+        }
+
+        .app-menu-theme-selector {
+            p {
+                color: white;
+            }
+        }
+
+        .app-search {
+            background: #1E2A47!important;
+
+            box-shadow: none!important;
+
+            .app-search-text {
+                
+                input {
+                    background: #1E2A47!important;
+                    color :white!important;
+                }
+
+                input::placeholder { 
+                    color: white!important;
+                }
+
+                input:focus { 
+                    color: white!important;
+                }
+            }
+        }
+
+        .app-profile-container {
+            background: #1E2A47!important;
+            box-shadow: none!important;
+
+            .app-profile-info-text {
+                h3 {
+                    color: white;
+                }
+                p {
+                    color: white!important;
+                }
+            }
+
+            .app-profile-lorem-ipsum {
+
+                p {
+                    color: white!important;
+                }
+            }
+
+            .app-profile-stats-wrapper {
+                background: #141D2F!important;
+                * {
+                    color: white!important;
+                }
+            }
+        }
+
+        .app-profile-social-wrapper {
+            
+            * {
+                color: white!important;
+            }
+        }
+    }
+}
+
