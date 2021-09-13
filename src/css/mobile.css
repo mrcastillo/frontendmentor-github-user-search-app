@@ -47,27 +47,33 @@
       height: 60px;
       border-radius: 15px;
       box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
-      .app-container .app-search-container .app-search .app-search-glass {
-        padding-left: 1em; }
-        .app-container .app-search-container .app-search .app-search-glass img {
-          width: 100%;
-          height: 100%; }
-      .app-container .app-search-container .app-search .app-search-text {
+      .app-container .app-search-container .app-search form {
+        display: flex;
+        flex-flow: row;
         flex: 1;
-        margin-left: .5em; }
-        .app-container .app-search-container .app-search .app-search-text input {
-          width: 95%;
-          border: none;
-          font-size: 13px;
-          height: 100%;
-          letter-spacing: -.5px; }
-        .app-container .app-search-container .app-search .app-search-text input::placeholder {
-          color: rgba(75, 106, 155, 0.7); }
-        .app-container .app-search-container .app-search .app-search-text input:focus {
-          border: none;
-          outline: none;
-          font-size: 13px;
-          color: black; }
+        justify-content: center;
+        align-items: center; }
+        .app-container .app-search-container .app-search form .app-search-glass {
+          padding-left: 1em; }
+          .app-container .app-search-container .app-search form .app-search-glass img {
+            width: 100%;
+            height: 100%; }
+        .app-container .app-search-container .app-search form .app-search-text {
+          flex: 1;
+          margin-left: .5em; }
+          .app-container .app-search-container .app-search form .app-search-text input {
+            width: 95%;
+            border: none;
+            font-size: 13px;
+            height: 100%;
+            letter-spacing: -.5px; }
+          .app-container .app-search-container .app-search form .app-search-text input::placeholder {
+            color: rgba(75, 106, 155, 0.7); }
+          .app-container .app-search-container .app-search form .app-search-text input:focus {
+            border: none;
+            outline: none;
+            font-size: 13px;
+            color: black; }
       .app-container .app-search-container .app-search .app-search-button {
         justify-self: flex-end;
         padding-right: .5em; }
@@ -88,7 +94,13 @@
         display: flex;
         flex-flow: row; }
         .app-container .app-profile-container .app-profile-info .app-profile-info-avatar {
-          margin: 0em 1em 0em 0em; }
+          margin: 0em 1em 0em 0em;
+          width: 70px;
+          height: auto; }
+          .app-container .app-profile-container .app-profile-info .app-profile-info-avatar img {
+            width: 100%;
+            height: auto;
+            border-radius: 1000px; }
         .app-container .app-profile-container .app-profile-info .app-profile-info-text {
           display: flex;
           flex-flow: column;
@@ -118,7 +130,7 @@
             font-weight: 700; }
         .app-container .app-profile-container .app-profile-stats-wrapper .app-profile-stat-mid {
           margin: 0em 2em; }
-      .app-container .app-profile-container .app-profile-social-tw {
+      .app-container .app-profile-container .app-profile-social-not-available {
         opacity: .5; }
       .app-container .app-profile-container .app-profile-social-wrapper .app-profile-social {
         display: flex;
