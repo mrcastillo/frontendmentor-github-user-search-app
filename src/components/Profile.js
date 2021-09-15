@@ -59,7 +59,7 @@ function Profile() {
 
             <br />
             <div className={"app-profile-social-wrapper"}>
-                <div className={`app-profile-social ${profile.location ? "" : "app-profile-social-not-available"}`}>
+                <div id={"profile-location-wrapper"} className={`app-profile-social ${profile.location ? "" : "app-profile-social-not-available"}`}>
                     <div className={"app-profile-social-img"}>
                         <img src={location} />
                     </div>
@@ -68,7 +68,7 @@ function Profile() {
                     </div>
                 </div>
 
-                <div className={`app-profile-social ${profile.blog ? "" : "app-profile-social-not-available"}`}>
+                <div id={"profile-blog-wrapper"} className={`app-profile-social ${profile.blog ? "" : "app-profile-social-not-available"}`}>
                     <div className={"app-profile-social-img"}>
                         <img src={website} />
                     </div>
@@ -77,7 +77,7 @@ function Profile() {
                     </div>
                 </div>
 
-                <div className={`app-profile-social ${profile.twitter_username ? "" : "app-profile-social-not-available"}`}>
+                <div id={"profile-twitter-wrapper"} className={`app-profile-social ${profile.twitter_username ? "" : "app-profile-social-not-available"}`}>
                     <div className={"app-profile-social-img"}>
                         <img src={twitter} />
                     </div>
@@ -86,7 +86,7 @@ function Profile() {
                     </div>
                 </div>
 
-                <div className={`app-profile-social ${profile.company ? "" : "app-profile-social-not-available"}`}>
+                <div id={"profile-company-wrapper"} className={`app-profile-social ${profile.company ? "" : "app-profile-social-not-available"}`}>
                     <div className={"app-profile-social-img"}>
                         <img src={company} />
                     </div>

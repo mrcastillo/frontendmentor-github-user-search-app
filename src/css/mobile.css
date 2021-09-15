@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px), (max-width: 767px) {
   .app-container {
     margin: 1em 1em; }
     .app-container h1 {

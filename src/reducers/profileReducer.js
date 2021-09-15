@@ -4,7 +4,5 @@ export const profileReducer = (state, action) => {
             const profile = action.userProfile.data;
             const newState = profile;
             return newState;
-
-            
     }
 }
