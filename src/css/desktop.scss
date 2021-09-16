@@ -257,9 +257,11 @@ and (min-device-width: 992px) and (min-width : 922px){
                     justify-content: center;
                     align-items: flex-start;
                     margin-right: 3em;
+                    width: 117px;
+                    height: auto;
 
                     img {
-                        width: 100%;
+                        width: 117px;
                         height: auto;
                         border-radius: 1000px;
                     }

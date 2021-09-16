@@ -605,9 +605,11 @@ body, html, #root {
           flex-flow: row;
           justify-content: center;
           align-items: flex-start;
-          margin-right: 3em; }
+          margin-right: 3em;
+          width: 117px;
+          height: auto; }
           .app-container .app-profile-container .app-profile-wrapper .app-profile-info-avatar-lg img {
-            width: 100%;
+            width: 117px;
             height: auto;
             border-radius: 1000px; }
         .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info {
