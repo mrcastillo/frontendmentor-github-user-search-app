@@ -39,7 +39,7 @@ function Profile() {
                     <br />
                     <br />
                     <div className={"app-profile-lorem-ipsum"}>
-                        <p>{profile.name} is a Github User with the login name <span id={"highlight"}>{profile.login}</span>. The user has created <span id={"highlight"}>{profile.public_repos}</span> public repos, and has <span id={"highlight"}>{profile.followers}</span> profile followers.
+                        <p>{profile.name ? profile.name:"This"} is a Github User with the login name <span id={"highlight"}>{profile.login}</span>. The user has created <span id={"highlight"}>{profile.public_repos}</span> public repos, and has <span id={"highlight"}>{profile.followers}</span> profile followers.
                         Their last update was at <span id={"highlight"}>{months[updatedAtDate.getMonth()]}, {updatedAtDate.getDate()}  {updatedAtDate.getFullYear()} at {updatedAtDate.getHours()}:{updatedAtDate.getMinutes()}</span> military time.
                         </p>
                     </div>
