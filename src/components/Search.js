@@ -8,13 +8,11 @@ import { getProfile } from "../functions/profileFunctions";
 function Search() {
 
     const [ usernameInput, setUsernameInput ] = useState("");
-
     const { profile, dispatch } = useContext(UserProfileContext);
 
     const changeProfile = (e) => {
         e.preventDefault();
         console.log("I just got clicked!");
-
         getProfile(dispatch, usernameInput);
     };
 
@@ -22,6 +20,8 @@ function Search() {
         const userInput = text.target.value;
         setUsernameInput(userInput);
     }
+
+    const errorMessage = document.getElementById("profile-company-wrapper");
 
     return (
     <div className={"app-search-container"}>
@@ -32,6 +32,9 @@ function Search() {
                 </div>
                 <div className={"app-search-text"}>
                     <input value={usernameInput} onChange={handleInputText} placeholder={"Search Github username..."} type={"text"} id={"search"} name={"n-search"}></input>
+                    <div id={"search-err"} style={{visibility: profile.error ? "visible":"hidden", display: profile.error ? "initial":"none"}}>
+                        <p>No Results</p>
+                    </div>
                 </div>
 
                 <div className={"app-search-button"}>

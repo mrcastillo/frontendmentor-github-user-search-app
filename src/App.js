@@ -21,7 +21,7 @@ function App() {
           <Search />
           <br/>
           
-            <Profile />
+          <Profile />
           
       </div>
     </ProfileContextProvider>

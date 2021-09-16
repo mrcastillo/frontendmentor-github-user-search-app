@@ -1,8 +1,8 @@
 @media only screen 
-and (min-device-width: 768px) and (min-width : 768px) and (max-width: 921px) {
+and (min-device-width: 992px) and (min-width : 922px){
     
     .app-container { 
-        margin: 5em 100px 5em 100px;
+        margin: 5em 8% 5em 8%;
         
         h1 {
             font-size: 32px;
@@ -243,25 +243,20 @@ and (min-device-width: 768px) and (min-width : 768px) and (max-width: 921px) {
 
         .app-profile-container {
             background: white;
-            padding: 2em 3em;
+            padding: 3em 3em;
             border-radius: 15px;
             box-shadow: rgba(75, 105, 155, .5) 0px 5px 15px;
 
-            .app-profile-info-avatar-lg {
-                visibility: hidden;
-                display: none;
-            }
-
-            .app-profile-info {
+            .app-profile-wrapper {
                 display: flex;
                 flex-flow: row;
-                
 
-                .app-profile-info-avatar {
-                    margin: 0em 2em 0em 0em;
-
-                    width: 117px;
-                    height: auto;
+                .app-profile-info-avatar-lg {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin-right: 3em;
 
                     img {
                         width: 100%;
@@ -270,113 +265,144 @@ and (min-device-width: 768px) and (min-width : 768px) and (max-width: 921px) {
                     }
                 }
 
-                .app-profile-info-text {
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: space-evenly;
+                .app-profile-info-lg {
+
+                    .app-profile-info {
+                        display: flex;
+                        flex-flow: row;
                     
-                    * {
-                        margin-bottom: .5em;
+                        .app-profile-info-avatar {
+                            display: none;
+                            visibility: hidden;
+                            margin: 0em 2em 0em 0em;
+        
+                            width: 117px;
+                            height: auto;
+        
+                            img {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 1000px;
+                            }
+                        }
+        
+                        .app-profile-info-text {
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            width: 100%;
+
+                            * {
+                                margin-bottom: .5em;
+                            }
+                            
+                            h3 {
+                                font-size: 26px;
+                                order: 1;
+                                flex-basis: 50%;
+                            }
+        
+                            a {
+                                color: #0079FF;
+                                order: 3;
+                                flex-basis: 100%;
+                            }
+        
+                            p {
+                                color: #697C9A;
+                                order: 2;
+                                flex-basis: 50%;
+                                text-align: right;
+                            }
+                        }
                     }
-                    
-                    h3 {
-                        font-size: 26px;
+    
+                    .app-profile-lorem-ipsum {
+    
+                        p {
+                            color: #4B6A9B;
+                            line-height: 1.5em;
+                            font-size: 15px;
+                        }
                     }
-
-                    a {
-                        color: #0079FF;
+    
+                    .app-profile-stats-wrapper {
+                        display: flex;
+                        flex-flow: row;
+                        justify-content: space-around;
+        
+                        background: #F6F8FF;
+        
+                        padding: 1.5em 0em;
+                        border-radius: 15px;
+        
+                        .app-profile-stat {
+                            
+                            
+        
+                            p:nth-child(1) {
+                                color: #4B6A9B;
+                                margin-bottom: 1em;
+                                font-size: 13px;
+                            }
+                            p:nth-child(2) {
+                                color: #2B3442;
+                                font-weight: 700;
+                                font-size: 22px;
+                            }
+                        }
+        
+                        .app-profile-stat-mid {
+                            margin: 0em 2em;
+                        }
                     }
-
-                    p {
-                        color: #697C9A;
+    
+                    .app-profile-social-not-available {
+                        opacity: .5;
                     }
-                }
-            }
-
-            .app-profile-lorem-ipsum {
-
-                p {
-                    color: #4B6A9B;
-                    line-height: 1.5em;
-                    font-size: 15px;
-                }
-            }
-
-            .app-profile-stats-wrapper {
-                display: flex;
-                flex-flow: row;
-                justify-content: space-around;
-
-                background: #F6F8FF;
-
-                padding: 1.5em 0em;
-                border-radius: 15px;
-
-                .app-profile-stat {
-                    
-                    
-
-                    p:nth-child(1) {
-                        color: #4B6A9B;
-                        margin-bottom: 1em;
-                        font-size: 13px;
+    
+                    .app-profile-social-wrapper {
+                        display: flex;
+                        flex-flow: row wrap;
+        
+                        .app-profile-social {
+                            display: flex;
+                            flex-flow: row;
+                            flex-basis: 50%;
+                            justify-content: flex-start;
+                            align-items: center;
+                            color: #4B6A9B;
+                            padding: .5em 0em;
+                            
+        
+                            .app-profile-social-img {
+                                width: 10%;
+                            }
+        
+                            .app-profile-social-text {
+                                flex: 1;
+                                font-size: 15px;
+                            }
+                        }
+        
+                        //Tablet Specific
+                        #profile-location-wrapper {
+                            order: 1;
+                        }
+        
+                        #profile-blog-wrapper {
+                            order: 3;
+                        }
+        
+                        
+                        #profile-twitter-wrapper {
+                            order: 2;
+                        }
+        
+                        #profile-company-wrapper {
+                            order: 4;
+                        }
                     }
-                    p:nth-child(2) {
-                        color: #2B3442;
-                        font-weight: 700;
-                        font-size: 22px;
-                    }
-                }
-
-                .app-profile-stat-mid {
-                    margin: 0em 2em;
-                }
-            }
-
-            .app-profile-social-not-available {
-                opacity: .5;
-            }
-
-            .app-profile-social-wrapper {
-                display: flex;
-                flex-flow: row wrap;
-
-                .app-profile-social {
-                    display: flex;
-                    flex-flow: row;
-                    flex-basis: 50%;
-                    justify-content: flex-start;
-                    align-items: center;
-                    color: #4B6A9B;
-                    padding: .5em 0em;
-                    
-
-                    .app-profile-social-img {
-                        width: 10%;
-                    }
-
-                    .app-profile-social-text {
-                        flex: 1;
-                        font-size: 15px;
-                    }
-                }
-
-                //Tablet Specific
-                #profile-location-wrapper {
-                    order: 1;
-                }
-
-                #profile-blog-wrapper {
-                    order: 3;
-                }
-
-                
-                #profile-twitter-wrapper {
-                    order: 2;
-                }
-
-                #profile-company-wrapper {
-                    order: 4;
                 }
             }
         }

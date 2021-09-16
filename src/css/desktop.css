@@ -1,6 +1,6 @@
-@media only screen and (min-device-width: 768px) and (min-width: 768px) and (max-width: 921px) {
+@media only screen and (min-device-width: 992px) and (min-width: 922px) {
   .app-container {
-    margin: 5em 100px 5em 100px; }
+    margin: 5em 8% 5em 8%; }
     .app-container h1 {
       font-size: 32px;
       font-weight: 700; }
@@ -152,79 +152,99 @@
           font-weight: 700; }
     .app-container .app-profile-container {
       background: white;
-      padding: 2em 3em;
+      padding: 3em 3em;
       border-radius: 15px;
       box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
-      .app-container .app-profile-container .app-profile-info-avatar-lg {
-        visibility: hidden;
-        display: none; }
-      .app-container .app-profile-container .app-profile-info {
+      .app-container .app-profile-container .app-profile-wrapper {
         display: flex;
         flex-flow: row; }
-        .app-container .app-profile-container .app-profile-info .app-profile-info-avatar {
-          margin: 0em 2em 0em 0em;
-          width: 117px;
-          height: auto; }
-          .app-container .app-profile-container .app-profile-info .app-profile-info-avatar img {
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-avatar-lg {
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: flex-start;
+          margin-right: 3em; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-avatar-lg img {
             width: 100%;
             height: auto;
             border-radius: 1000px; }
-        .app-container .app-profile-container .app-profile-info .app-profile-info-text {
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info {
           display: flex;
-          flex-flow: column;
-          justify-content: space-evenly; }
-          .app-container .app-profile-container .app-profile-info .app-profile-info-text * {
-            margin-bottom: .5em; }
-          .app-container .app-profile-container .app-profile-info .app-profile-info-text h3 {
-            font-size: 26px; }
-          .app-container .app-profile-container .app-profile-info .app-profile-info-text a {
-            color: #0079FF; }
-          .app-container .app-profile-container .app-profile-info .app-profile-info-text p {
-            color: #697C9A; }
-      .app-container .app-profile-container .app-profile-lorem-ipsum p {
-        color: #4B6A9B;
-        line-height: 1.5em;
-        font-size: 15px; }
-      .app-container .app-profile-container .app-profile-stats-wrapper {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        background: #F6F8FF;
-        padding: 1.5em 0em;
-        border-radius: 15px; }
-        .app-container .app-profile-container .app-profile-stats-wrapper .app-profile-stat p:nth-child(1) {
+          flex-flow: row; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-avatar {
+            display: none;
+            visibility: hidden;
+            margin: 0em 2em 0em 0em;
+            width: 117px;
+            height: auto; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-avatar img {
+              width: 100%;
+              height: auto;
+              border-radius: 1000px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            width: 100%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text * {
+              margin-bottom: .5em; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text h3 {
+              font-size: 26px;
+              order: 1;
+              flex-basis: 50%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text a {
+              color: #0079FF;
+              order: 3;
+              flex-basis: 100%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text p {
+              color: #697C9A;
+              order: 2;
+              flex-basis: 50%;
+              text-align: right; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-lorem-ipsum p {
           color: #4B6A9B;
-          margin-bottom: 1em;
-          font-size: 13px; }
-        .app-container .app-profile-container .app-profile-stats-wrapper .app-profile-stat p:nth-child(2) {
-          color: #2B3442;
-          font-weight: 700;
-          font-size: 22px; }
-        .app-container .app-profile-container .app-profile-stats-wrapper .app-profile-stat-mid {
-          margin: 0em 2em; }
-      .app-container .app-profile-container .app-profile-social-not-available {
-        opacity: .5; }
-      .app-container .app-profile-container .app-profile-social-wrapper {
-        display: flex;
-        flex-flow: row wrap; }
-        .app-container .app-profile-container .app-profile-social-wrapper .app-profile-social {
+          line-height: 1.5em;
+          font-size: 15px; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper {
           display: flex;
           flex-flow: row;
-          flex-basis: 50%;
-          justify-content: flex-start;
-          align-items: center;
-          color: #4B6A9B;
-          padding: .5em 0em; }
-          .app-container .app-profile-container .app-profile-social-wrapper .app-profile-social .app-profile-social-img {
-            width: 10%; }
-          .app-container .app-profile-container .app-profile-social-wrapper .app-profile-social .app-profile-social-text {
-            flex: 1;
-            font-size: 15px; }
-        .app-container .app-profile-container .app-profile-social-wrapper #profile-location-wrapper {
-          order: 1; }
-        .app-container .app-profile-container .app-profile-social-wrapper #profile-blog-wrapper {
-          order: 3; }
-        .app-container .app-profile-container .app-profile-social-wrapper #profile-twitter-wrapper {
-          order: 2; }
-        .app-container .app-profile-container .app-profile-social-wrapper #profile-company-wrapper {
-          order: 4; } }
+          justify-content: space-around;
+          background: #F6F8FF;
+          padding: 1.5em 0em;
+          border-radius: 15px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper .app-profile-stat p:nth-child(1) {
+            color: #4B6A9B;
+            margin-bottom: 1em;
+            font-size: 13px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper .app-profile-stat p:nth-child(2) {
+            color: #2B3442;
+            font-weight: 700;
+            font-size: 22px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper .app-profile-stat-mid {
+            margin: 0em 2em; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-not-available {
+          opacity: .5; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper {
+          display: flex;
+          flex-flow: row wrap; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper .app-profile-social {
+            display: flex;
+            flex-flow: row;
+            flex-basis: 50%;
+            justify-content: flex-start;
+            align-items: center;
+            color: #4B6A9B;
+            padding: .5em 0em; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper .app-profile-social .app-profile-social-img {
+              width: 10%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper .app-profile-social .app-profile-social-text {
+              flex: 1;
+              font-size: 15px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-location-wrapper {
+            order: 1; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-blog-wrapper {
+            order: 3; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-twitter-wrapper {
+            order: 2; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-company-wrapper {
+            order: 4; } }

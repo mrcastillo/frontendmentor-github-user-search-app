@@ -35,9 +35,13 @@
           height: 100%;
           margin: 0em 1em 0em 0em;
           font-weight: 700; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector p:hover {
+          cursor: pointer; }
         .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector img {
           width: 100%;
           height: auto; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector:hover {
+          cursor: pointer; }
     .app-container .app-search-container .app-search {
       display: flex;
       flex-flow: row;
@@ -61,6 +65,11 @@
         .app-container .app-search-container .app-search form .app-search-text {
           flex: 1;
           margin-left: .5em; }
+          .app-container .app-search-container .app-search form .app-search-text #search-err {
+            color: red;
+            font-size: 13px;
+            flex-basis: 25%;
+            text-align: right; }
           .app-container .app-search-container .app-search form .app-search-text input {
             width: 95%;
             border: none;
@@ -90,6 +99,9 @@
       padding: 2em 1em;
       border-radius: 15px;
       box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
+      .app-container .app-profile-container .app-profile-info-avatar-lg {
+        visibility: hidden;
+        display: none; }
       .app-container .app-profile-container .app-profile-info {
         display: flex;
         flex-flow: row; }

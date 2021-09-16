@@ -1,6 +1,10 @@
 .dark-theme body, .dark-theme #root {
   background: #141D2F !important; }
 
+.dark-theme #highlight {
+  background: #141D2F !important;
+  color: white; }
+
 .dark-theme .app-container .app-menu-brand h1 {
   color: white !important; }
 

@@ -13,6 +13,10 @@ body, html, #root {
 .dark-theme body, .dark-theme #root {
   background: #141D2F !important; }
 
+.dark-theme #highlight {
+  background: #141D2F !important;
+  color: white; }
+
 .dark-theme .app-container .app-menu-brand h1 {
   color: white !important; }
 
@@ -84,9 +88,13 @@ body, html, #root {
           height: 100%;
           margin: 0em 1em 0em 0em;
           font-weight: 700; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector p:hover {
+          cursor: pointer; }
         .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector img {
           width: 100%;
           height: auto; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector:hover {
+          cursor: pointer; }
     .app-container .app-search-container .app-search {
       display: flex;
       flex-flow: row;
@@ -110,6 +118,11 @@ body, html, #root {
         .app-container .app-search-container .app-search form .app-search-text {
           flex: 1;
           margin-left: .5em; }
+          .app-container .app-search-container .app-search form .app-search-text #search-err {
+            color: red;
+            font-size: 13px;
+            flex-basis: 25%;
+            text-align: right; }
           .app-container .app-search-container .app-search form .app-search-text input {
             width: 95%;
             border: none;
@@ -139,6 +152,9 @@ body, html, #root {
       padding: 2em 1em;
       border-radius: 15px;
       box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
+      .app-container .app-profile-container .app-profile-info-avatar-lg {
+        visibility: hidden;
+        display: none; }
       .app-container .app-profile-container .app-profile-info {
         display: flex;
         flex-flow: row; }
@@ -193,7 +209,7 @@ body, html, #root {
         .app-container .app-profile-container .app-profile-social-wrapper .app-profile-social .app-profile-social-text {
           flex: 1; } }
 
-@media only screen and (min-device-width: 768px) and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) and (min-width: 768px) and (max-width: 921px) {
   .app-container {
     margin: 5em 100px 5em 100px; }
     .app-container h1 {
@@ -205,6 +221,8 @@ body, html, #root {
     .app-container p, .app-container a {
       font-size: 15px;
       font-weight: 400; }
+    .app-container #highlight {
+      background: yellow; }
     .app-container .app-menu-container .app-menu {
       display: flex;
       flex-flow: row;
@@ -230,9 +248,13 @@ body, html, #root {
           height: 100%;
           margin: 0em 1em 0em 0em;
           font-weight: 700; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector p:hover {
+          cursor: pointer; }
         .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector img {
           width: 100%;
           height: auto; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector:hover {
+          cursor: pointer; }
     .app-container .app-search-container .app-search {
       display: flex;
       flex-flow: row;
@@ -280,6 +302,9 @@ body, html, #root {
           border-radius: 10px;
           font-size: 12px;
           font-weight: 700; }
+        .app-container .app-search-container .app-search .app-search-button button:hover {
+          background: #60ABFF;
+          cursor: pointer; }
     .app-container .app-search-container .app-search {
       display: flex;
       flex-flow: row;
@@ -302,12 +327,21 @@ body, html, #root {
             height: 100%; }
         .app-container .app-search-container .app-search form .app-search-text {
           flex: 1;
-          margin-left: 1.5em; }
+          margin-left: 1.5em;
+          display: flex;
+          flex-flow: row;
+          align-items: center; }
+          .app-container .app-search-container .app-search form .app-search-text #search-err {
+            color: red;
+            font-size: 13px;
+            flex-basis: 25%;
+            text-align: right;
+            margin-right: 1em; }
           .app-container .app-search-container .app-search form .app-search-text input {
+            flex: 1;
             width: 95%;
             border: none;
             font-size: 13px;
-            height: 100%;
             letter-spacing: -.5px; }
           .app-container .app-search-container .app-search form .app-search-text input::placeholder {
             color: rgba(75, 106, 155, 0.7); }
@@ -332,12 +366,15 @@ body, html, #root {
       padding: 2em 3em;
       border-radius: 15px;
       box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
+      .app-container .app-profile-container .app-profile-info-avatar-lg {
+        visibility: hidden;
+        display: none; }
       .app-container .app-profile-container .app-profile-info {
         display: flex;
         flex-flow: row; }
         .app-container .app-profile-container .app-profile-info .app-profile-info-avatar {
-          margin: 0em 1em 0em 0em;
-          width: 70px;
+          margin: 0em 2em 0em 0em;
+          width: 117px;
           height: auto; }
           .app-container .app-profile-container .app-profile-info .app-profile-info-avatar img {
             width: 100%;
@@ -402,3 +439,266 @@ body, html, #root {
           order: 2; }
         .app-container .app-profile-container .app-profile-social-wrapper #profile-company-wrapper {
           order: 4; } }
+
+@media only screen and (min-device-width: 992px) and (min-width: 922px) {
+  .app-container {
+    margin: 5em 8% 5em 8%; }
+    .app-container h1 {
+      font-size: 32px;
+      font-weight: 700; }
+    .app-container h3 {
+      font-size: 16px;
+      font-weight: 700; }
+    .app-container p, .app-container a {
+      font-size: 15px;
+      font-weight: 400; }
+    .app-container #highlight {
+      background: yellow; }
+    .app-container .app-menu-container .app-menu {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      padding: 1em 0em; }
+      .app-container .app-menu-container .app-menu .app-menu-brand {
+        flex: 50%;
+        display: flex;
+        flex-flow: row;
+        align-items: center; }
+        .app-container .app-menu-container .app-menu .app-menu-brand h1 {
+          color: #2B3442;
+          font-weight: 700; }
+      .app-container .app-menu-container .app-menu .app-menu-theme-selector {
+        flex: 50%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: #4B6A9B;
+        font-weight: 700; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector p {
+          height: 100%;
+          margin: 0em 1em 0em 0em;
+          font-weight: 700; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector p:hover {
+          cursor: pointer; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector img {
+          width: 100%;
+          height: auto; }
+        .app-container .app-menu-container .app-menu .app-menu-theme-selector .app-menu-selector:hover {
+          cursor: pointer; }
+    .app-container .app-search-container .app-search {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 15px;
+      box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
+      .app-container .app-search-container .app-search form {
+        display: flex;
+        flex-flow: row;
+        flex: 1;
+        justify-content: center;
+        align-items: center; }
+        .app-container .app-search-container .app-search form .app-search-glass {
+          padding-left: 1em; }
+          .app-container .app-search-container .app-search form .app-search-glass img {
+            width: 100%;
+            height: 100%; }
+        .app-container .app-search-container .app-search form .app-search-text {
+          flex: 1;
+          margin-left: .5em; }
+          .app-container .app-search-container .app-search form .app-search-text input {
+            width: 95%;
+            border: none;
+            font-size: 18px;
+            height: 100%;
+            letter-spacing: -.5px; }
+          .app-container .app-search-container .app-search form .app-search-text input::placeholder {
+            color: rgba(75, 106, 155, 0.7);
+            font-size: 18px; }
+          .app-container .app-search-container .app-search form .app-search-text input:focus {
+            border: none;
+            outline: none;
+            font-size: 18px;
+            color: black; }
+      .app-container .app-search-container .app-search .app-search-button {
+        justify-self: flex-end;
+        padding-right: .5em; }
+        .app-container .app-search-container .app-search .app-search-button button {
+          background: #0079FF;
+          color: white;
+          padding: 1em 1em;
+          border: none;
+          border-radius: 10px;
+          font-size: 12px;
+          font-weight: 700; }
+        .app-container .app-search-container .app-search .app-search-button button:hover {
+          background: #60ABFF;
+          cursor: pointer; }
+    .app-container .app-search-container .app-search {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      height: 60px;
+      border-radius: 15px;
+      box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
+      .app-container .app-search-container .app-search form {
+        display: flex;
+        flex-flow: row;
+        flex: 1;
+        justify-content: center;
+        align-items: center; }
+        .app-container .app-search-container .app-search form .app-search-glass {
+          padding-left: 2em; }
+          .app-container .app-search-container .app-search form .app-search-glass img {
+            width: 100%;
+            height: 100%; }
+        .app-container .app-search-container .app-search form .app-search-text {
+          flex: 1;
+          margin-left: 1.5em;
+          display: flex;
+          flex-flow: row;
+          align-items: center; }
+          .app-container .app-search-container .app-search form .app-search-text #search-err {
+            color: red;
+            font-size: 13px;
+            flex-basis: 25%;
+            text-align: right;
+            margin-right: 1em; }
+          .app-container .app-search-container .app-search form .app-search-text input {
+            flex: 1;
+            width: 95%;
+            border: none;
+            font-size: 13px;
+            letter-spacing: -.5px; }
+          .app-container .app-search-container .app-search form .app-search-text input::placeholder {
+            color: rgba(75, 106, 155, 0.7); }
+          .app-container .app-search-container .app-search form .app-search-text input:focus {
+            border: none;
+            outline: none;
+            font-size: 13px;
+            color: black; }
+      .app-container .app-search-container .app-search .app-search-button {
+        justify-self: flex-end;
+        padding-right: .5em; }
+        .app-container .app-search-container .app-search .app-search-button button {
+          background: #0079FF;
+          color: white;
+          padding: 1em 1em;
+          border: none;
+          border-radius: 10px;
+          font-size: 14px;
+          font-weight: 700; }
+    .app-container .app-profile-container {
+      background: white;
+      padding: 3em 3em;
+      border-radius: 15px;
+      box-shadow: rgba(75, 105, 155, 0.5) 0px 5px 15px; }
+      .app-container .app-profile-container .app-profile-wrapper {
+        display: flex;
+        flex-flow: row; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-avatar-lg {
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: flex-start;
+          margin-right: 3em; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-avatar-lg img {
+            width: 100%;
+            height: auto;
+            border-radius: 1000px; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info {
+          display: flex;
+          flex-flow: row; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-avatar {
+            display: none;
+            visibility: hidden;
+            margin: 0em 2em 0em 0em;
+            width: 117px;
+            height: auto; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-avatar img {
+              width: 100%;
+              height: auto;
+              border-radius: 1000px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            width: 100%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text * {
+              margin-bottom: .5em; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text h3 {
+              font-size: 26px;
+              order: 1;
+              flex-basis: 50%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text a {
+              color: #0079FF;
+              order: 3;
+              flex-basis: 100%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-info .app-profile-info-text p {
+              color: #697C9A;
+              order: 2;
+              flex-basis: 50%;
+              text-align: right; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-lorem-ipsum p {
+          color: #4B6A9B;
+          line-height: 1.5em;
+          font-size: 15px; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+          background: #F6F8FF;
+          padding: 1.5em 0em;
+          border-radius: 15px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper .app-profile-stat p:nth-child(1) {
+            color: #4B6A9B;
+            margin-bottom: 1em;
+            font-size: 13px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper .app-profile-stat p:nth-child(2) {
+            color: #2B3442;
+            font-weight: 700;
+            font-size: 22px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-stats-wrapper .app-profile-stat-mid {
+            margin: 0em 2em; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-not-available {
+          opacity: .5; }
+        .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper {
+          display: flex;
+          flex-flow: row wrap; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper .app-profile-social {
+            display: flex;
+            flex-flow: row;
+            flex-basis: 50%;
+            justify-content: flex-start;
+            align-items: center;
+            color: #4B6A9B;
+            padding: .5em 0em; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper .app-profile-social .app-profile-social-img {
+              width: 10%; }
+            .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper .app-profile-social .app-profile-social-text {
+              flex: 1;
+              font-size: 15px; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-location-wrapper {
+            order: 1; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-blog-wrapper {
+            order: 3; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-twitter-wrapper {
+            order: 2; }
+          .app-container .app-profile-container .app-profile-wrapper .app-profile-info-lg .app-profile-social-wrapper #profile-company-wrapper {
+            order: 4; } }
+
+@media only screen and (min-device-width: 1350px) and (min-width: 1350px) {
+  .app-container {
+    margin: 5em 20% 5em 20%; } }
+
+@media only screen and (min-device-width: 1800px) and (min-width: 1800px) {
+  .app-container {
+    margin: 5em 25% 5em 25%; } }
+
+@media only screen and (min-device-width: 2200px) and (min-width: 2200px) {
+  .app-container {
+    margin: 5em 30% 5em 30%; } }

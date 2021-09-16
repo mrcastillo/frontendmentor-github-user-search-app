@@ -25,5 +25,29 @@ body, html, #root {
 
 @import "./mobile.scss";
 @import "./tablet.scss";
+@import "./desktop.scss";
 
+@media only screen 
+and (min-device-width: 1350px) and (min-width : 1350px){
+
+    .app-container { 
+        margin: 5em 20% 5em 20%;
+    }
+}
+
+@media only screen 
+and (min-device-width: 1800px) and (min-width : 1800px){
+
+    .app-container { 
+        margin: 5em 25% 5em 25%;
+    }
+}
+
+@media only screen 
+and (min-device-width: 2200px) and (min-width : 2200px){
+
+    .app-container { 
+        margin: 5em 30% 5em 30%;
+    }
+}
 //
