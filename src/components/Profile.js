@@ -9,7 +9,7 @@ import company from "../images/icon-company.svg";
 
 function Profile() {
     
-    const { profile , dispatch } = useContext(UserProfileContext);
+    const { profile } = useContext(UserProfileContext);
 
     const createdAtDate = new Date(profile.created_at);
     const updatedAtDate = new Date(profile.updated_at)
@@ -20,17 +20,17 @@ function Profile() {
             
             <div className={"app-profile-wrapper"}>
                 <div className={"app-profile-info-avatar-lg"}>
-                        <img src={profile.avatar_url} />
+                        <img src={profile.avatar_url} alt={"profile avatar"}/>
                 </div>
 
                 <div className={"app-profile-info-lg"}>
                     <div className={"app-profile-info"}>
                         <div className={"app-profile-info-avatar"}>
-                            <img src={profile.avatar_url} />
+                            <img src={profile.avatar_url} alt={"profile avatar"}/>
                         </div>
                         <div className={"app-profile-info-text"}>
                             <h3 id={"name"}>{profile.name}</h3>
-                            <a id={"login"}>@{profile.login}</a>
+                            <a href={"/"} id={"login"}>@{profile.login}</a>
                             <p id={"joined"}>Joined {createdAtDate.getDate()} {months[createdAtDate.getMonth()]} {createdAtDate.getFullYear()}</p>
                             
                         </div>
@@ -39,8 +39,8 @@ function Profile() {
                     <br />
                     <br />
                     <div className={"app-profile-lorem-ipsum"}>
-                        <p>{profile.name ? profile.name:"This"} is a Github User with the login name <span id={"highlight"}>{profile.login}</span>. The user has created <span id={"highlight"}>{profile.public_repos}</span> public repos, and has <span id={"highlight"}>{profile.followers}</span> profile followers.
-                        Their last update was at <span id={"highlight"}>{months[updatedAtDate.getMonth()]}, {updatedAtDate.getDate()}  {updatedAtDate.getFullYear()} at {updatedAtDate.getHours()}:{updatedAtDate.getMinutes()}</span> military time.
+                        <p>{profile.name ? profile.name:"This"} is a Github User with the login name <span className="highlight">{profile.login}</span>. The user has created <span className="highlight">{profile.public_repos}</span> public repos, and has <span className="highlight">{profile.followers}</span> profile followers.
+                        Their last update was at <span className="highlight">{months[updatedAtDate.getMonth()]}, {updatedAtDate.getDate()}  {updatedAtDate.getFullYear()} at {updatedAtDate.getHours()}:{updatedAtDate.getMinutes()}</span> military time.
                         </p>
                     </div>
 
@@ -67,7 +67,7 @@ function Profile() {
                     <div className={"app-profile-social-wrapper"}>
                         <div id={"profile-location-wrapper"} className={`app-profile-social ${profile.location ? "" : "app-profile-social-not-available"}`}>
                             <div className={"app-profile-social-img"}>
-                                <img src={location} />
+                                <img src={location} alt={"location-icon"} />
                             </div>
                             <div className={"app-profile-social-text"}>
                                 <p>{profile.location ? profile.location : "Not Available"}</p>
@@ -76,7 +76,7 @@ function Profile() {
 
                         <div id={"profile-blog-wrapper"} className={`app-profile-social ${profile.blog ? "" : "app-profile-social-not-available"}`}>
                             <div className={"app-profile-social-img"}>
-                                <img src={website} />
+                                <img src={website} alt={"social-icon"} />
                             </div>
                             <div className={"app-profile-social-text"}>
                                 <p>{profile.blog ? profile.blog : "Not Available"}</p>
@@ -85,7 +85,7 @@ function Profile() {
 
                         <div id={"profile-twitter-wrapper"} className={`app-profile-social ${profile.twitter_username ? "" : "app-profile-social-not-available"}`}>
                             <div className={"app-profile-social-img"}>
-                                <img src={twitter} />
+                                <img src={twitter} alt={"twitter-icon"} />
                             </div>
                             <div className={"app-profile-social-text"}>
                                 <p>{profile.twitter_username ? profile.twitter_username : "Not Available"}</p>
@@ -94,7 +94,7 @@ function Profile() {
 
                         <div id={"profile-company-wrapper"} className={`app-profile-social ${profile.company ? "" : "app-profile-social-not-available"}`}>
                             <div className={"app-profile-social-img"}>
-                                <img src={company} />
+                                <img src={company} alt={"profile-icon"} />
                             </div>
                             <div className={"app-profile-social-text"}>
                                 <p>{profile.company ? profile.company : "Not Available"}</p>

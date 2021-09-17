@@ -7,7 +7,7 @@ import ProfileContextProvider from "./context/ProfileContext";
 
 function App() {
   //Add DarkTheme or LightTheme class 
-  const [theme, setTheme] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const theme = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
   const html = document.querySelector("html");
 
   html.setAttribute("class", `${theme ? "dark-theme" : "light-theme"}`);

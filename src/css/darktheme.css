@@ -1,10 +1,6 @@
 .dark-theme body, .dark-theme #root {
   background: #141D2F !important; }
 
-.dark-theme #highlight {
-  background: #141D2F !important;
-  color: white; }
-
 .dark-theme .app-container .app-menu-brand h1 {
   color: white !important; }
 
@@ -29,6 +25,9 @@
     color: white; }
   .dark-theme .app-container .app-profile-container .app-profile-info-text p {
     color: white !important; }
+  .dark-theme .app-container .app-profile-container .app-profile-lorem-ipsum .highlight {
+    background: #141D2F !important;
+    color: white; }
   .dark-theme .app-container .app-profile-container .app-profile-lorem-ipsum p {
     color: white !important; }
   .dark-theme .app-container .app-profile-container .app-profile-stats-wrapper {

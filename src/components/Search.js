@@ -21,14 +21,12 @@ function Search() {
         setUsernameInput(userInput);
     }
 
-    const errorMessage = document.getElementById("profile-company-wrapper");
-
     return (
     <div className={"app-search-container"}>
         <div className={"app-search"}>
             <form onSubmit={changeProfile}>
                 <div className={"app-search-glass"}>
-                    <img src={glass} />
+                    <img src={glass} alt={"search icon"} />
                 </div>
                 <div className={"app-search-text"}>
                     <input value={usernameInput} onChange={handleInputText} placeholder={"Search Github username..."} type={"text"} id={"search"} name={"n-search"}></input>

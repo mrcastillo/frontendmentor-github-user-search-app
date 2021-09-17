@@ -10,8 +10,6 @@
     .app-container p, .app-container a {
       font-size: 15px;
       font-weight: 400; }
-    .app-container #highlight {
-      background: yellow; }
     .app-container .app-menu-container .app-menu {
       display: flex;
       flex-flow: row;

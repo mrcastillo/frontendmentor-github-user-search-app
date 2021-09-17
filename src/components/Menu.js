@@ -31,7 +31,7 @@ function Menu() {
                 <div onClick={themeButton} className={"app-menu-theme-selector"}>
                     <p>{theme ? "LIGHT": "DARK"}</p>
                     <div className={"app-menu-selector"}>
-                        <img src={theme ? sunIcon : moonIcon} />
+                        <img src={theme ? sunIcon : moonIcon} alt={"color-theme-icon"}/>
                     </div>
                 </div>
             </div>

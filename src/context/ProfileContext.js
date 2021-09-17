@@ -1,7 +1,7 @@
 import React, { createContext, useReducer, useEffect } from "react";
 
 import { profileReducer } from "../reducers/profileReducer";
-import { defaultProfile, getProfile } from "../functions/profileFunctions";
+import { defaultProfile } from "../functions/profileFunctions";
 
 
 export const UserProfileContext = createContext();
