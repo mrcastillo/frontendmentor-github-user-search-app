@@ -113,6 +113,10 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px), (max-width: 76
                         flex: 1;
                         margin-left: .5em;
 
+                        display: flex;
+                        flex-flow: row;
+                        justify-content: center;
+                        
                         #search-err {
                             color: red;
                             font-size: 13px;
